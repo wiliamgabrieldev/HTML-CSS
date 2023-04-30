@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="7_Font_Collections_24207.ico" type="image/x-icon">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+            font-size: 1em;
+            font-weight: lighter;
+        
+        }
+        h1{
+            font-family: 'Work Sans', sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+
+            /* Shorthand significa "mãozinha" pra simplificar todas essas tags acima sobre Fontes.
+            A tag a ser utilizada é a 'Font' onde tem que tá na ordem da seguinte maneira:display: 
+            
+              Simplificando:
+
+		        font:  italic  bolder  3em  'Work Sans', sans-serif;
+
+                A sequência deve ser:font-style   ->   font-weight   ->   font-size   ->   font-family;
+            
+            ; */
+        }
+        h2{
+            font: bold 2em 'Work Sans';
+        }
+/* Weight = PESO
+   Width = LARGURA
+   Height = ALTURA*/
+
+       /* 
+
+📝 LEMBRE-SE
+
+Medidas Absolutas: 
+
+	cm (centímero), mm (milimetro), in (polegada), px (pixel), pt (ponto), pc (paica)
+
+Medidas Relativas:
+            
+	em	->	relativo ao tamanho natural da fonte
+	ex	->	relativo a altura x da fonte
+	rem	->	tipo em, mas relativo a fonte configurada no body
+	vw	->	relativo a largura da view port
+	vh	->	relativo a altura da view port
+	%	->	porcentagem
+
+Recomendação w3c:  "px" ou "em"
+
+Altura padrão:  16px ou 1em */
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus fuga eveniet magnam in enim incidunt, ex deserunt aperiam provident ducimus neque explicabo temporibus quibusdam et ipsum facere quo mollitia quasi!</p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos itaque aliquid et numquam, vitae commodi asperiores. Praesentium earum quidem neque inventore facilis suscipit, corporis nam voluptatum consequuntur, reprehenderit eius optio?
+
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet aperiam suscipit, molestiae consequuntur ea dolorum, recusandae eligendi sapiente hic numquam ullam iusto! Expedita earum sed et, explicabo optio laboriosam ullam.</p>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ab tempora doloremque eum blanditiis, quae debitis beatae ad exercitationem aut! Deserunt inventore fuga quidem. Minima tenetur excepturi praesentium nobis quasi.
+</body>
+</html>
+
+<!-- Font-family mais comuns:    Arial, Verdana e Helvetica
+
+    font-family: 'Courier New';   -> nomes compostos precisam de 'aspas'
+    font-family: sans-serif;	    -> qualquer fonte sem serifa
+    font-family: serif;		    -> qualquer fonte com serifa
+    font-family: monospace;     -> qualquer fonte monoespaçada
+
+Safe combination:
+
+	Se não tiver uma opção de fonte, passa para a seguinte. (Pesquisar mais: CSS web safe font combinations). 
+
+	Ex:	font-family: Arial, Helvetica, sans-serif;
+		font-family: 'Times New Roman', Times, serif;
+
+ *Dica: Após "font-family:", ao clicar Ctrl + Espaço, o VS Code sugere as principais safe combinations. -->
